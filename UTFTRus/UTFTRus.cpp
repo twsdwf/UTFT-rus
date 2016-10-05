@@ -6,7 +6,7 @@
 	таблица перекодировки. часть русских букв переиспользует английские,
 	за сим линейного преобразования нет, нужна таблица соответствий.
 */
-uint8_t utf8_rus_charmap[] PROGMEM = {
+uint8_t const utf8_rus_charmap[] PROGMEM = {
 'A', 	//A		0
 128,	//Б		1
 'B',	//В		2
@@ -76,7 +76,7 @@ uint8_t utf8_rus_charmap[] PROGMEM = {
 175		//я		65
 };
 
-UTFTRus::UTFTRus(byte model, int RS, int WR, int CS, int RST, int SER=0):UTFT(model, RS, WR, CS, RST, SER)
+UTFTRus::UTFTRus(byte model, int RS, int WR, int CS, int RST, int SER):UTFT(model, RS, WR, CS, RST, SER)
 {
 
 }
