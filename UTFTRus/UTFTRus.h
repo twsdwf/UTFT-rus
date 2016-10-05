@@ -4,7 +4,7 @@
 #include<Arduino.h>
 #include<UTFT.h>
 
-class UTFTRus{
+class UTFTRus: public UTFT {
 public:
 // 	UTFTRus();
 	UTFTRus(byte model, int RS, int WR, int CS, int RST, int SER=0);
